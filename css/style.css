@@ -1,0 +1,60 @@
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    color: #352E28;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+}
+
+h1::before{
+    content: "";
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FEC260;
+    z-index: -1;
+    transition: height .5s;
+}
+
+h1:hover::before{
+    height: 65%;
+}
+
+.bookmark-body{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+.demo i{
+    font-size: 25px;
+}
+
+.demo{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+label{
+    margin-right: auto;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.buttonn{
+    color: #fff;
+    background-color: #d1512d;
+}
+
+.buttonn:hover{
+    color: #fff;
+    background-color: #bb4120;
+}
